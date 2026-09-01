@@ -3,165 +3,964 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magneto Fidgets</title>
+
+  <title>MagnetFidgets | Magnetic Fidgets</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">🧲 Magneto Fidgets</div>
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <a href="#" class="logo">
+      🧲 <span>MagnetFidgets</span>
+    </a>
 
     <nav>
       <a href="#shop">Shop</a>
       <a href="#about">About</a>
-      <button id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
+
+      <button id="cartButton" class="cart-button">
+        🛒 Cart
+        <span id="cartCount">0</span>
+      </button>
     </nav>
+
   </header>
 
+
+  <!-- ================= HERO ================= -->
+
   <section class="hero">
-    <div>
-      <h1>Fidget. Click. Magnet.</h1>
-      <p>Small magnetic toys made for satisfying hands.</p>
-      <a href="#shop" class="shop-button">Shop Fidgets</a>
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        WELCOME TO MAGNETFIDGETS
+      </p>
+
+      <h1>
+        Fidget.<br>
+        Click.<br>
+        <span>Magnet.</span>
+      </h1>
+
+      <p class="hero-text">
+        Satisfying magnetic fidgets made for
+        endless clicking, spinning, snapping,
+        and building.
+      </p>
+
+      <a href="#shop" class="hero-button">
+        Shop Fidgets →
+      </a>
+
     </div>
+
+    <div class="hero-art">
+      🧲
+    </div>
+
   </section>
 
-  <main id="shop">
 
-    <h2>Our Fidgets</h2>
+  <!-- ================= SHOP ================= -->
+
+  <main id="shop" class="shop">
+
+    <p class="section-label">
+      OUR PRODUCTS
+    </p>
+
+    <h2>
+      Pick Your Fidget
+    </h2>
 
     <div class="products">
 
-      <div class="product">
-        <div class="product-image blue">🧲</div>
-        <h3>Magnetic Cubes</h3>
-        <p class="description">Snap them together and pull them apart.</p>
-        <p class="price">$8.99</p>
-        <button class="add-button" data-name="Magnetic Cubes" data-price="8.99">
-          Add to Cart
-        </button>
-      </div>
 
-      <div class="product">
-        <div class="product-image purple">🧲</div>
-        <h3>Magnet Rings</h3>
-        <p class="description">Spin, stack, and snap the rings together.</p>
-        <p class="price">$6.99</p>
-        <button class="add-button" data-name="Magnet Rings" data-price="6.99">
-          Add to Cart
-        </button>
-      </div>
+      <!-- CUBE -->
 
-      <div class="product">
-        <div class="product-image orange">🧲</div>
-        <h3>Magnetic Bars</h3>
-        <p class="description">Build weird little magnetic creations.</p>
-        <p class="price">$10.99</p>
-        <button class="add-button" data-name="Magnetic Bars" data-price="10.99">
-          Add to Cart
-        </button>
-      </div>
+      <article class="product">
 
-      <div class="product">
-        <div class="product-image green">🧲</div>
-        <h3>Magnetic Balls</h3>
-        <p class="description">Satisfying magnetic clicking and stacking.</p>
-        <p class="price">$12.99</p>
-        <button class="add-button" data-name="Magnetic Balls" data-price="12.99">
-          Add to Cart
-        </button>
-      </div>
+        <div class="product-image blue">
+          🧲
+        </div>
+
+        <h3>
+          Magnetic Cubes
+        </h3>
+
+        <p>
+          Snap them together and pull them apart
+          for a satisfying magnetic fidget.
+        </p>
+
+        <div class="product-footer">
+
+          <strong>
+            $8.99
+          </strong>
+
+          <button
+            class="add-button"
+            data-name="Magnetic Cubes"
+            data-price="8.99">
+
+            Add to Cart
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- RINGS -->
+
+      <article class="product">
+
+        <div class="product-image purple">
+          🧲
+        </div>
+
+        <h3>
+          Magnet Rings
+        </h3>
+
+        <p>
+          Spin, stack, and snap the rings together
+          whenever you need something to fidget with.
+        </p>
+
+        <div class="product-footer">
+
+          <strong>
+            $6.99
+          </strong>
+
+          <button
+            class="add-button"
+            data-name="Magnet Rings"
+            data-price="6.99">
+
+            Add to Cart
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- BARS -->
+
+      <article class="product">
+
+        <div class="product-image orange">
+          🧲
+        </div>
+
+        <h3>
+          Magnetic Bars
+        </h3>
+
+        <p>
+          Build little magnetic creations
+          while you fidget.
+        </p>
+
+        <div class="product-footer">
+
+          <strong>
+            $10.99
+          </strong>
+
+          <button
+            class="add-button"
+            data-name="Magnetic Bars"
+            data-price="10.99">
+
+            Add to Cart
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- BALLS -->
+
+      <article class="product">
+
+        <div class="product-image green">
+          🧲
+        </div>
+
+        <h3>
+          Magnetic Balls
+        </h3>
+
+        <p>
+          Stack, separate, and rearrange
+          these magnetic fidget pieces.
+        </p>
+
+        <div class="product-footer">
+
+          <strong>
+            $12.99
+          </strong>
+
+          <button
+            class="add-button"
+            data-name="Magnetic Balls"
+            data-price="12.99">
+
+            Add to Cart
+
+          </button>
+
+        </div>
+
+      </article>
 
     </div>
+
   </main>
 
+
+  <!-- ================= ABOUT ================= -->
+
   <section id="about" class="about">
-    <h2>Why Magneto Fidgets?</h2>
-    <p>
-      We make fun magnetic fidgets that are satisfying to play with,
-      easy to carry, and built for endless combinations.
+
+    <p class="section-label">
+      ABOUT MAGNETFIDGETS
     </p>
+
+    <h2>
+      Built For Fidgeting.
+    </h2>
+
+    <p>
+      MagnetFidgets makes fun magnetic fidgets
+      designed for people who just like having
+      something satisfying to play with.
+    </p>
+
   </section>
 
-  <div id="cart" class="cart">
-    <button id="closeCart" class="close">✕</button>
 
-    <h2>Your Cart</h2>
+  <!-- ================= CART ================= -->
+
+  <div id="cartOverlay" class="overlay"></div>
+
+  <aside id="cart" class="cart">
+
+    <button
+      id="closeCart"
+      class="close-button">
+
+      ✕
+
+    </button>
+
+    <h2>
+      Your Cart
+    </h2>
 
     <div id="cartItems">
-      <p>Your cart is empty.</p>
+
+      <p class="empty-cart">
+        Your cart is empty.
+      </p>
+
     </div>
 
     <div class="cart-bottom">
-      <strong>Total: $<span id="cartTotal">0.00</span></strong>
-      <button class="checkout">Checkout</button>
+
+      <div class="total-row">
+
+        <span>
+          Total
+        </span>
+
+        <strong>
+          $<span id="cartTotal">0.00</span>
+        </strong>
+
+      </div>
+
+      <button
+        id="checkoutButton"
+        class="checkout-button">
+
+        Checkout →
+
+      </button>
+
     </div>
+
+  </aside>
+
+
+  <!-- ================= CHECKOUT ================= -->
+
+  <section
+    id="checkoutPage"
+    class="checkout-page">
+
+    <div class="checkout-box">
+
+      <button
+        id="closeCheckout"
+        class="checkout-close">
+
+        ✕
+
+      </button>
+
+      <p class="section-label">
+        MAGNETFIDGETS CHECKOUT
+      </p>
+
+      <h1>
+        Complete Your Order
+      </h1>
+
+
+      <!-- SHIPPING -->
+
+      <h2>
+        📦 Shipping Information
+      </h2>
+
+      <label for="fullName">
+        Full Name
+      </label>
+
+      <input
+        id="fullName"
+        type="text"
+        placeholder="Your full name"
+        autocomplete="name">
+
+
+      <label for="address">
+        Street Address
+      </label>
+
+      <input
+        id="address"
+        type="text"
+        placeholder="123 Example Street"
+        autocomplete="street-address">
+
+
+      <label for="city">
+        City
+      </label>
+
+      <input
+        id="city"
+        type="text"
+        placeholder="Your city"
+        autocomplete="address-level2">
+
+
+      <div class="two-columns">
+
+        <div>
+
+          <label for="state">
+            State
+          </label>
+
+          <input
+            id="state"
+            type="text"
+            placeholder="State"
+            autocomplete="address-level1">
+
+        </div>
+
+        <div>
+
+          <label for="zip">
+            ZIP Code
+          </label>
+
+          <input
+            id="zip"
+            type="text"
+            placeholder="ZIP code"
+            autocomplete="postal-code">
+
+        </div>
+
+      </div>
+
+
+      <label for="country">
+        Country
+      </label>
+
+      <select id="country">
+
+        <option value="">
+          Select your country
+        </option>
+
+        <option>
+          United States
+        </option>
+
+        <option>
+          Canada
+        </option>
+
+        <option>
+          United Kingdom
+        </option>
+
+        <option>
+          Australia
+        </option>
+
+        <option>
+          Other
+        </option>
+
+      </select>
+
+
+      <!-- ORDER SUMMARY -->
+
+      <h2>
+        🛒 Order Summary
+      </h2>
+
+      <div id="checkoutSummary" class="checkout-summary">
+        Your cart is empty.
+      </div>
+
+
+      <!-- PAYMENT -->
+
+      <h2>
+        🔒 Payment
+      </h2>
+
+      <div class="secure-box">
+
+        <div class="secure-icon">
+          🔒
+        </div>
+
+        <div>
+
+          <strong>
+            Secure Payment
+          </strong>
+
+          <p>
+            Your payment information will be entered
+            on a secure payment provider's checkout page.
+          </p>
+
+        </div>
+
+      </div>
+
+      <button
+        id="securePaymentButton"
+        class="payment-button">
+
+        Continue to Secure Payment →
+
+      </button>
+
+      <button
+        id="backToStore"
+        class="back-button">
+
+        ← Back to Store
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PAYMENT MESSAGE ================= -->
+
+  <div
+    id="paymentModal"
+    class="payment-modal">
+
+    <div class="payment-modal-box">
+
+      <div class="big-lock">
+        🔒
+      </div>
+
+      <h2>
+        Secure Payment
+      </h2>
+
+      <p>
+        This is where your secure payment
+        provider would open.
+      </p>
+
+      <p class="small-text">
+        For real purchases, connect this button
+        to a payment provider such as Stripe
+        Checkout instead of collecting card
+        information directly on GitHub Pages.
+      </p>
+
+      <button id="closePaymentModal">
+        Back to Checkout
+      </button>
+
+    </div>
+
   </div>
 
+
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <p>© 2026 Magneto Fidgets</p>
+
+    <div class="footer-logo">
+      🧲 MagnetFidgets
+    </div>
+
+    <p>
+      Fidget. Click. Magnet.
+    </p>
+
+    <p class="copyright">
+      © 2026 MagnetFidgets
+    </p>
+
   </footer>
 
-  <script>
-    const cart = [];
-    const cartElement = document.getElementById("cart");
-    const cartItems = document.getElementById("cartItems");
-    const cartCount = document.getElementById("cartCount");
-    const cartTotal = document.getElementById("cartTotal");
 
-    document.querySelectorAll(".add-button").forEach(button => {
-      button.addEventListener("click", () => {
-        cart.push({
-          name: button.dataset.name,
-          price: Number(button.dataset.price)
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    const cart = [];
+
+
+    const cartElement =
+      document.getElementById("cart");
+
+    const cartOverlay =
+      document.getElementById("cartOverlay");
+
+    const cartItems =
+      document.getElementById("cartItems");
+
+    const cartCount =
+      document.getElementById("cartCount");
+
+    const cartTotal =
+      document.getElementById("cartTotal");
+
+    const checkoutPage =
+      document.getElementById("checkoutPage");
+
+    const checkoutSummary =
+      document.getElementById("checkoutSummary");
+
+
+    /* ================= ADD TO CART ================= */
+
+    document
+      .querySelectorAll(".add-button")
+      .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+          const product = {
+
+            name: button.dataset.name,
+
+            price: Number(
+              button.dataset.price
+            )
+
+          };
+
+          cart.push(product);
+
+          updateCart();
+
+          button.textContent = "Added ✓";
+
+          setTimeout(() => {
+
+            button.textContent =
+              "Add to Cart";
+
+          }, 900);
+
         });
 
-        updateCart();
       });
-    });
+
+
+    /* ================= UPDATE CART ================= */
 
     function updateCart() {
-      cartCount.textContent = cart.length;
+
+      cartCount.textContent =
+        cart.length;
+
 
       if (cart.length === 0) {
-        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+
+        cartItems.innerHTML = `
+          <p class="empty-cart">
+            Your cart is empty.
+          </p>
+        `;
+
       } else {
+
         cartItems.innerHTML = "";
 
         cart.forEach((item, index) => {
-          const div = document.createElement("div");
-          div.className = "cart-item";
+
+          const div =
+            document.createElement("div");
+
+          div.className =
+            "cart-item";
 
           div.innerHTML = `
-            <span>${item.name}</span>
-            <span>
-              $${item.price.toFixed(2)}
-              <button onclick="removeItem(${index})">✕</button>
-            </span>
+
+            <div>
+              <strong>${item.name}</strong>
+
+              <small>
+                $${item.price.toFixed(2)}
+              </small>
+            </div>
+
+            <button
+              class="remove-button"
+              onclick="removeItem(${index})">
+
+              ✕
+
+            </button>
+
           `;
 
           cartItems.appendChild(div);
+
         });
+
       }
 
-      const total = cart.reduce((sum, item) => sum + item.price, 0);
-      cartTotal.textContent = total.toFixed(2);
+
+      const total =
+        cart.reduce(
+          (sum, item) =>
+            sum + item.price,
+          0
+        );
+
+      cartTotal.textContent =
+        total.toFixed(2);
+
     }
+
+
+    /* ================= REMOVE ================= */
 
     function removeItem(index) {
+
       cart.splice(index, 1);
+
       updateCart();
+
     }
 
-    document.getElementById("cartButton").onclick = () => {
-      cartElement.classList.add("open");
-    };
 
-    document.getElementById("closeCart").onclick = () => {
+    /* ================= OPEN CART ================= */
+
+    document
+      .getElementById("cartButton")
+      .addEventListener("click", () => {
+
+        cartElement.classList.add("open");
+
+        cartOverlay.classList.add("show");
+
+      });
+
+
+    /* ================= CLOSE CART ================= */
+
+    function closeCart() {
+
       cartElement.classList.remove("open");
-    };
+
+      cartOverlay.classList.remove("show");
+
+    }
+
+
+    document
+      .getElementById("closeCart")
+      .addEventListener(
+        "click",
+        closeCart
+      );
+
+
+    cartOverlay.addEventListener(
+      "click",
+      closeCart
+    );
+
+
+    /* ================= CHECKOUT ================= */
+
+    document
+      .getElementById("checkoutButton")
+      .addEventListener(
+        "click",
+        openCheckout
+      );
+
+
+    function openCheckout() {
+
+      if (cart.length === 0) {
+
+        alert(
+          "Your cart is empty!"
+        );
+
+        return;
+
+      }
+
+      closeCart();
+
+      checkoutPage.classList.add(
+        "active"
+      );
+
+      updateCheckoutSummary();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+
+    /* ================= CLOSE CHECKOUT ================= */
+
+    document
+      .getElementById("closeCheckout")
+      .addEventListener(
+        "click",
+        () => {
+
+          checkoutPage.classList.remove(
+            "active"
+          );
+
+        }
+      );
+
+
+    document
+      .getElementById("backToStore")
+      .addEventListener(
+        "click",
+        () => {
+
+          checkoutPage.classList.remove(
+            "active"
+          );
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+      );
+
+
+    /* ================= CHECKOUT SUMMARY ================= */
+
+    function updateCheckoutSummary() {
+
+      checkoutSummary.innerHTML = "";
+
+      cart.forEach(item => {
+
+        const row =
+          document.createElement("div");
+
+        row.className =
+          "summary-row";
+
+        row.innerHTML = `
+
+          <span>
+            ${item.name}
+          </span>
+
+          <strong>
+            $${item.price.toFixed(2)}
+          </strong>
+
+        `;
+
+        checkoutSummary.appendChild(row);
+
+      });
+
+
+      const total =
+        cart.reduce(
+          (sum, item) =>
+            sum + item.price,
+          0
+        );
+
+
+      const totalRow =
+        document.createElement("div");
+
+      totalRow.className =
+        "summary-total";
+
+      totalRow.innerHTML = `
+
+        <span>
+          Total
+        </span>
+
+        <strong>
+          $${total.toFixed(2)}
+        </strong>
+
+      `;
+
+      checkoutSummary.appendChild(
+        totalRow
+      );
+
+    }
+
+
+    /* ================= PAYMENT ================= */
+
+    document
+      .getElementById(
+        "securePaymentButton"
+      )
+      .addEventListener(
+        "click",
+        () => {
+
+          const name =
+            document
+              .getElementById("fullName")
+              .value.trim();
+
+          const address =
+            document
+              .getElementById("address")
+              .value.trim();
+
+          const city =
+            document
+              .getElementById("city")
+              .value.trim();
+
+          const state =
+            document
+              .getElementById("state")
+              .value.trim();
+
+          const zip =
+            document
+              .getElementById("zip")
+              .value.trim();
+
+          const country =
+            document
+              .getElementById("country")
+              .value;
+
+
+          if (
+            !name ||
+            !address ||
+            !city ||
+            !state ||
+            !zip ||
+            !country
+          ) {
+
+            alert(
+              "Please fill out all of your shipping information."
+            );
+
+            return;
+
+          }
+
+
+          document
+            .getElementById("paymentModal")
+            .classList.add("show");
+
+        }
+      );
+
+
+    /* ================= CLOSE PAYMENT ================= */
+
+    document
+      .getElementById("closePaymentModal")
+      .addEventListener(
+        "click",
+        () => {
+
+          document
+            .getElementById("paymentModal")
+            .classList.remove("show");
+
+        }
+      );
+
+
+    /* ================= INITIALIZE ================= */
+
+    updateCart();
+
   </script>
 
 </body>
+
 </html>

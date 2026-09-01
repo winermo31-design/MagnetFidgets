@@ -9,93 +9,126 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   background: #f5f7fb;
+
   color: #202331;
 }
 
 
 /* ================= HEADER ================= */
 
-header {
-  height: 72px;
+.header {
+  height: 70px;
+
   background: white;
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
   padding: 0 7%;
 
   position: sticky;
+
   top: 0;
-  z-index: 50;
+
+  z-index: 100;
 
   box-shadow:
-    0 2px 15px rgba(0, 0, 0, 0.08);
+    0 2px 15px
+    rgba(0, 0, 0, 0.08);
 }
 
 .logo {
+  color: #202331;
+
+  text-decoration: none;
+
   font-size: 22px;
+
   font-weight: 900;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
 }
 
 nav {
   display: flex;
+
   align-items: center;
+
   gap: 25px;
 }
 
 nav a {
   text-decoration: none;
+
   color: #202331;
-  font-weight: bold;
+
+  font-weight: 700;
 }
 
 nav a:hover {
   color: #5667ff;
 }
 
-#cartButton {
+.cart-button {
   border: none;
+
   background: #5667ff;
+
   color: white;
 
-  padding: 11px 17px;
+  padding: 10px 16px;
 
   border-radius: 10px;
 
   font-weight: bold;
 
   cursor: pointer;
+
+  transition: 0.2s;
 }
 
-#cartButton:hover {
+.cart-button:hover {
   transform: translateY(-2px);
 }
 
 #cartCount {
   background: white;
+
   color: #5667ff;
 
   padding: 3px 7px;
 
   border-radius: 20px;
 
-  margin-left: 4px;
+  margin-left: 5px;
 }
 
 
 /* ================= HERO ================= */
 
 .hero {
-  min-height: 520px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 480px;
 
   padding: 70px 10%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
 
   background:
     linear-gradient(
@@ -103,26 +136,29 @@ nav a:hover {
       #dfe4ff,
       #ffffff
     );
-
-  overflow: hidden;
 }
 
 .hero-content {
   max-width: 650px;
 }
 
-.small-title,
-.section-label {
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 2px;
+.eyebrow {
   color: #5667ff;
-  margin-bottom: 12px;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  font-weight: 900;
+
+  margin-bottom: 15px;
 }
 
 .hero h1 {
-  font-size: 70px;
+  font-size: 72px;
+
   line-height: 0.95;
+
   margin-bottom: 25px;
 }
 
@@ -130,58 +166,76 @@ nav a:hover {
   color: #5667ff;
 }
 
-.hero-description {
-  font-size: 19px;
-  line-height: 1.6;
+.hero-text {
   color: #666;
-  max-width: 550px;
+
+  font-size: 19px;
+
+  line-height: 1.6;
+
+  max-width: 560px;
+
   margin-bottom: 30px;
 }
 
-.shop-button {
+.hero-button {
   display: inline-block;
 
   background: #202331;
+
   color: white;
 
-  padding: 16px 25px;
-
-  border-radius: 12px;
-
   text-decoration: none;
+
+  padding: 15px 24px;
+
+  border-radius: 11px;
+
   font-weight: bold;
 
   transition: 0.2s;
 }
 
-.shop-button:hover {
+.hero-button:hover {
   background: #5667ff;
+
   transform: translateY(-3px);
 }
 
-.hero-magnet {
+.hero-art {
   font-size: 190px;
 
-  transform: rotate(-15deg);
+  transform: rotate(-12deg);
 
   filter:
     drop-shadow(
-      0 20px 20px rgba(0,0,0,0.15)
+      0 20px 20px
+      rgba(0, 0, 0, 0.14)
     );
 }
 
 
 /* ================= SHOP ================= */
 
-main {
+.shop {
   padding: 80px 8%;
 }
 
-main > .section-label {
+.section-label {
   text-align: center;
+
+  color: #5667ff;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  font-weight: 900;
+
+  margin-bottom: 10px;
 }
 
-main h2 {
+.shop h2 {
   text-align: center;
 
   font-size: 40px;
@@ -207,17 +261,17 @@ main h2 {
 
   box-shadow:
     0 6px 25px
-    rgba(0,0,0,0.07);
+    rgba(0, 0, 0, 0.07);
 
   transition: 0.2s;
 }
 
 .product:hover {
-  transform: translateY(-7px);
+  transform: translateY(-6px);
 
   box-shadow:
     0 12px 30px
-    rgba(0,0,0,0.12);
+    rgba(0, 0, 0, 0.12);
 }
 
 .product-image {
@@ -226,7 +280,9 @@ main h2 {
   border-radius: 15px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   font-size: 90px;
@@ -252,35 +308,39 @@ main h2 {
 
 .product h3 {
   font-size: 21px;
+
   margin-bottom: 9px;
 }
 
-.description {
+.product p {
   color: #777;
 
   line-height: 1.5;
 
-  min-height: 67px;
+  min-height: 70px;
 }
 
-.product-bottom {
+.product-footer {
   display: flex;
 
   align-items: center;
+
   justify-content: space-between;
+
+  gap: 10px;
 
   margin-top: 18px;
 }
 
-.price {
-  font-size: 22px;
-  font-weight: 900;
+.product-footer strong {
+  font-size: 21px;
 }
 
 .add-button {
   border: none;
 
   background: #202331;
+
   color: white;
 
   padding: 11px 13px;
@@ -290,6 +350,8 @@ main h2 {
   font-weight: bold;
 
   cursor: pointer;
+
+  transition: 0.2s;
 }
 
 .add-button:hover {
@@ -326,26 +388,48 @@ main h2 {
 }
 
 
+/* ================= OVERLAY ================= */
+
+.overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(0, 0, 0, 0.4);
+
+  z-index: 150;
+
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+
 /* ================= CART ================= */
 
 .cart {
   position: fixed;
 
-  right: -420px;
+  right: -430px;
+
   top: 0;
 
-  width: 400px;
+  width: 410px;
+
   height: 100vh;
 
   background: white;
 
   padding: 35px;
 
-  z-index: 100;
+  z-index: 200;
 
   box-shadow:
     -8px 0 30px
-    rgba(0,0,0,0.15);
+    rgba(0, 0, 0, 0.15);
 
   transition: right 0.3s;
 }
@@ -360,11 +444,12 @@ main h2 {
   margin-bottom: 30px;
 }
 
-.close {
+.close-button {
   position: absolute;
 
-  right: 20px;
   top: 20px;
+
+  right: 20px;
 
   border: none;
 
@@ -377,8 +462,10 @@ main h2 {
 
 .empty-cart {
   color: #888;
+
   text-align: center;
-  margin-top: 50px;
+
+  margin-top: 60px;
 }
 
 .cart-item {
@@ -402,17 +489,18 @@ main h2 {
 
   color: #777;
 
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-.cart-item button {
+.remove-button {
   border: none;
 
-  background: #ffe1e1;
+  background: #ffe5e5;
 
   color: #c33;
 
   width: 30px;
+
   height: 30px;
 
   border-radius: 8px;
@@ -426,10 +514,11 @@ main h2 {
   bottom: 30px;
 
   left: 35px;
+
   right: 35px;
 }
 
-.total {
+.total-row {
   display: flex;
 
   justify-content: space-between;
@@ -439,16 +528,16 @@ main h2 {
   margin-bottom: 15px;
 }
 
-.checkout {
+.checkout-button {
   width: 100%;
-
-  padding: 15px;
 
   border: none;
 
   background: #5667ff;
 
   color: white;
+
+  padding: 15px;
 
   border-radius: 11px;
 
@@ -459,7 +548,7 @@ main h2 {
   cursor: pointer;
 }
 
-.checkout:hover {
+.checkout-button:hover {
   background: #4354e5;
 }
 
@@ -471,9 +560,9 @@ main h2 {
 
   min-height: 100vh;
 
-  background: #f5f7fb;
-
   padding: 60px 20px;
+
+  background: #f5f7fb;
 }
 
 .checkout-page.active {
@@ -487,15 +576,35 @@ main h2 {
 
   margin: auto;
 
-  background: white;
-
   padding: 40px;
+
+  background: white;
 
   border-radius: 22px;
 
   box-shadow:
     0 10px 40px
-    rgba(0,0,0,0.08);
+    rgba(0, 0, 0, 0.08);
+}
+
+.checkout-close {
+  position: absolute;
+
+  top: 25px;
+
+  right: 25px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.checkout-box .section-label {
+  text-align: left;
 }
 
 .checkout-box h1 {
@@ -508,8 +617,7 @@ main h2 {
   font-size: 22px;
 
   margin:
-    30px 0
-    15px;
+    30px 0 18px;
 }
 
 .checkout-box label {
@@ -520,7 +628,8 @@ main h2 {
   margin-bottom: 7px;
 }
 
-.checkout-box input {
+.checkout-box input,
+.checkout-box select {
   width: 100%;
 
   padding: 14px;
@@ -531,62 +640,98 @@ main h2 {
 
   font-size: 16px;
 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+
+  background: white;
 
   outline: none;
 }
 
-.checkout-box input:focus {
+.checkout-box input:focus,
+.checkout-box select:focus {
   border-color: #5667ff;
 
   box-shadow:
     0 0 0 3px
-    rgba(86,103,255,0.12);
+    rgba(86, 103, 255, 0.12);
 }
 
-.two-inputs {
+.two-columns {
   display: flex;
 
   gap: 15px;
 }
 
-.two-inputs > div {
+.two-columns > div {
   width: 50%;
 }
 
-.secure-payment {
+
+/* ================= SUMMARY ================= */
+
+.checkout-summary {
+  border: 1px solid #eee;
+
+  border-radius: 12px;
+
+  padding: 5px 18px;
+}
+
+.summary-row,
+.summary-total {
   display: flex;
 
-  gap: 15px;
+  justify-content: space-between;
+
+  padding: 14px 0;
+}
+
+.summary-row {
+  border-bottom: 1px solid #eee;
+}
+
+.summary-total {
+  font-size: 19px;
+}
+
+
+/* ================= SECURE PAYMENT ================= */
+
+.secure-box {
+  display: flex;
 
   align-items: center;
 
-  background: #edf8ef;
+  gap: 15px;
 
   padding: 18px;
+
+  background: #edf8ef;
 
   border-radius: 12px;
 
   margin-bottom: 20px;
 }
 
-.lock {
-  font-size: 25px;
+.secure-icon {
+  font-size: 28px;
 }
 
-.secure-payment strong {
+.secure-box strong {
   display: block;
 
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
-.secure-payment p {
+.secure-box p {
   color: #557055;
 
   font-size: 14px;
+
+  line-height: 1.4;
 }
 
-.pay-button {
+.payment-button {
   width: 100%;
 
   border: none;
@@ -606,7 +751,7 @@ main h2 {
   cursor: pointer;
 }
 
-.pay-button:hover {
+.payment-button:hover {
   background: #4354e5;
 }
 
@@ -619,30 +764,15 @@ main h2 {
 
   padding: 15px;
 
-  cursor: pointer;
-
   font-weight: bold;
-}
-
-.checkout-close {
-  position: absolute;
-
-  right: 25px;
-  top: 25px;
-
-  border: none;
-
-  background: transparent;
-
-  font-size: 22px;
 
   cursor: pointer;
 }
 
 
-/* ================= PAYMENT MESSAGE ================= */
+/* ================= PAYMENT MODAL ================= */
 
-.payment-message {
+.payment-modal {
   position: fixed;
 
   inset: 0;
@@ -650,26 +780,27 @@ main h2 {
   display: none;
 
   align-items: center;
+
   justify-content: center;
 
   background:
-    rgba(0,0,0,0.55);
+    rgba(0, 0, 0, 0.55);
 
-  z-index: 200;
+  z-index: 500;
 
   padding: 20px;
 }
 
-.payment-message.show {
+.payment-modal.show {
   display: flex;
 }
 
-.payment-card {
-  background: white;
+.payment-modal-box {
+  width: 100%;
 
   max-width: 430px;
 
-  width: 100%;
+  background: white;
 
   padding: 40px;
 
@@ -678,19 +809,19 @@ main h2 {
   text-align: center;
 }
 
-.payment-icon {
+.big-lock {
   font-size: 55px;
 
   margin-bottom: 15px;
 }
 
-.payment-card h2 {
+.payment-modal-box h2 {
   font-size: 28px;
 
   margin-bottom: 12px;
 }
 
-.payment-card p {
+.payment-modal-box p {
   color: #666;
 
   line-height: 1.5;
@@ -698,11 +829,11 @@ main h2 {
   margin-bottom: 12px;
 }
 
-.payment-small {
+.small-text {
   font-size: 13px;
 }
 
-.payment-card button {
+.payment-modal-box button {
   width: 100%;
 
   border: none;
@@ -735,10 +866,16 @@ footer {
   padding: 35px;
 }
 
-footer p {
-  margin-top: 8px;
+.footer-logo {
+  font-size: 22px;
 
+  font-weight: 900;
+}
+
+footer p {
   color: #aaa;
+
+  margin-top: 8px;
 }
 
 footer .copyright {
@@ -761,7 +898,7 @@ footer .copyright {
     font-size: 55px;
   }
 
-  .hero-magnet {
+  .hero-art {
     font-size: 130px;
   }
 
@@ -770,7 +907,7 @@ footer .copyright {
 
 @media (max-width: 650px) {
 
-  header {
+  .header {
     padding: 0 5%;
   }
 
@@ -782,7 +919,7 @@ footer .copyright {
     padding: 60px 8%;
   }
 
-  .hero-magnet {
+  .hero-art {
     display: none;
   }
 
@@ -801,15 +938,16 @@ footer .copyright {
   }
 
   .checkout-box {
-    padding: 28px 20px;
+    padding: 30px 20px;
   }
 
-  .two-inputs {
+  .two-columns {
     flex-direction: column;
+
     gap: 0;
   }
 
-  .two-inputs > div {
+  .two-columns > div {
     width: 100%;
   }
 
