@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magneto Fidgets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🧲 Magneto Fidgets</div>
+
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <button id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Fidget. Click. Magnet.</h1>
+      <p>Small magnetic toys made for satisfying hands.</p>
+      <a href="#shop" class="shop-button">Shop Fidgets</a>
+    </div>
+  </section>
+
+  <main id="shop">
+
+    <h2>Our Fidgets</h2>
+
+    <div class="products">
+
+      <div class="product">
+        <div class="product-image blue">🧲</div>
+        <h3>Magnetic Cubes</h3>
+        <p class="description">Snap them together and pull them apart.</p>
+        <p class="price">$8.99</p>
+        <button class="add-button" data-name="Magnetic Cubes" data-price="8.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product">
+        <div class="product-image purple">🧲</div>
+        <h3>Magnet Rings</h3>
+        <p class="description">Spin, stack, and snap the rings together.</p>
+        <p class="price">$6.99</p>
+        <button class="add-button" data-name="Magnet Rings" data-price="6.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product">
+        <div class="product-image orange">🧲</div>
+        <h3>Magnetic Bars</h3>
+        <p class="description">Build weird little magnetic creations.</p>
+        <p class="price">$10.99</p>
+        <button class="add-button" data-name="Magnetic Bars" data-price="10.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product">
+        <div class="product-image green">🧲</div>
+        <h3>Magnetic Balls</h3>
+        <p class="description">Satisfying magnetic clicking and stacking.</p>
+        <p class="price">$12.99</p>
+        <button class="add-button" data-name="Magnetic Balls" data-price="12.99">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="about" class="about">
+    <h2>Why Magneto Fidgets?</h2>
+    <p>
+      We make fun magnetic fidgets that are satisfying to play with,
+      easy to carry, and built for endless combinations.
+    </p>
+  </section>
+
+  <div id="cart" class="cart">
+    <button id="closeCart" class="close">✕</button>
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems">
+      <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-bottom">
+      <strong>Total: $<span id="cartTotal">0.00</span></strong>
+      <button class="checkout">Checkout</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Magneto Fidgets</p>
+  </footer>
+
+  <script>
+    const cart = [];
+    const cartElement = document.getElementById("cart");
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("cartTotal");
+
+    document.querySelectorAll(".add-button").forEach(button => {
+      button.addEventListener("click", () => {
+        cart.push({
+          name: button.dataset.name,
+          price: Number(button.dataset.price)
+        });
+
+        updateCart();
+      });
+    });
+
+    function updateCart() {
+      cartCount.textContent = cart.length;
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+      } else {
+        cartItems.innerHTML = "";
+
+        cart.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "cart-item";
+
+          div.innerHTML = `
+            <span>${item.name}</span>
+            <span>
+              $${item.price.toFixed(2)}
+              <button onclick="removeItem(${index})">✕</button>
+            </span>
+          `;
+
+          cartItems.appendChild(div);
+        });
+      }
+
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    document.getElementById("cartButton").onclick = () => {
+      cartElement.classList.add("open");
+    };
+
+    document.getElementById("closeCart").onclick = () => {
+      cartElement.classList.remove("open");
+    };
+  </script>
+
+</body>
+</html>
